@@ -1,38 +1,92 @@
-.App {
-  text-align: center;
+* {
+  box-sizing: border-box;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+html {
+  padding: 0; 
+  margin: 0;
+  font-size: 62.5%; 
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+body {
+  padding: 0; 
+  margin: 0;
+  font-size: 16px;
+  background-color:rgb(6, 39, 44);
   color: white;
 }
-
-.App-link {
-  color: #61dafb;
+input {
+  color: black;
+}
+a {
+  color: white;
+  text-decoration: none;
+}
+a:hover {
+  color: white;
+  text-decoration: none;
+}
+.item {
+  padding: 5px 10px;
+  border: 1px solid black;
+  margin: 1rem;
+}
+header {
+  display: flex;
+  height: 90px;
+  background-color: rgb(17, 118, 133);
+  justify-content: space-between;
+  align-items: center;
+}
+nav {
+  display: flex;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+nav h3 {
+  padding: 0 1rem;
+}
+.search__input {
+  padding: 3px 5px;
+  border-radius: 5px;
+  width: 200px;
+  transition: all 0.3s;
+}
+.search__input:focus {
+  width: 350px;
+}
+
+.movie__list--container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 205px));
+  justify-content: space-between;
+  gap: 2rem 1rem;
+  margin-top: 3rem;
+}
+
+.movie__vote {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.detail__content {
+  margin: 2rem 0 2rem;
+}
+.detail__title {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+
+}
+.detail__color {
+  color:rgb(14, 106, 120);
+}
+.movie__image__container {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  margin: 0 10px 0;
+}
+img {
+  min-height: 315px;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
 }
